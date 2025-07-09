@@ -15,7 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, ChevronDown, Globe, Phone, Zap } from "lucide-react";
+import { Menu, ChevronDown, Globe, Phone } from "lucide-react";
 import { useState } from "react";
 
 export const Header = () => {
@@ -54,10 +54,11 @@ export const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-orange-500 to-green-500 rounded-lg">
-            <Zap className="w-5 h-5 text-white" />
-          </div>
-          <span className="font-bold text-xl brand-navy">SolarTech</span>
+          <img 
+            src="/lovable-uploads/4527a828-b094-4932-9ddc-7b666ca95e10.png" 
+            alt="Enfolded Logo" 
+            className="h-8 w-auto"
+          />
         </div>
 
         {/* Desktop Navigation */}

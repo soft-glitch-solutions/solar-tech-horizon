@@ -64,40 +64,26 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Hero Image/Animation */}
+          {/* Hero Image - House with Solar Panels */}
           <div className="relative">
-            <div className="relative">
-              {/* Main solar panel illustration */}
-              <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl p-8 transform rotate-3 shadow-2xl">
-                <div className="grid grid-cols-4 gap-2">
-                  {Array.from({ length: 16 }).map((_, i) => (
-                    <div 
-                      key={i} 
-                      className="aspect-square bg-gradient-to-br from-blue-300 to-blue-600 rounded-sm animate-pulse"
-                      style={{ animationDelay: `${i * 0.1}s` }}
-                    />
-                  ))}
-                </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1720625070078-bc41a9fe8e49?w=800&h=600&fit=crop&crop=center"
+                alt="Modern house with solar panels on roof"
+                className="w-full h-[400px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              
+              {/* Floating stats */}
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold text-brand-green">99%</div>
+                <div className="text-sm text-muted-foreground">Efficiency</div>
               </div>
-
-              {/* Battery unit */}
-              <div className="absolute -bottom-4 -left-8 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-4 shadow-xl transform -rotate-6">
-                <div className="w-16 h-10 bg-green-400 rounded-lg flex items-center justify-center">
-                  <div className="w-8 h-2 bg-white rounded-full" />
-                </div>
+              
+              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold text-brand-orange">25+</div>
+                <div className="text-sm text-muted-foreground">Year Warranty</div>
               </div>
-
-              {/* EV Charger */}
-              <div className="absolute -top-4 -right-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-4 shadow-xl transform rotate-12">
-                <div className="w-12 h-16 bg-orange-400 rounded-lg flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-              </div>
-
-              {/* Floating elements */}
-              <div className="absolute top-1/2 -left-12 w-6 h-6 bg-yellow-400 rounded-full animate-bounce" />
-              <div className="absolute top-1/4 -right-6 w-4 h-4 bg-green-400 rounded-full animate-pulse" />
-              <div className="absolute bottom-1/4 left-1/4 w-3 h-3 bg-orange-400 rounded-full animate-ping" />
             </div>
           </div>
         </div>
