@@ -16,7 +16,7 @@ const solarProducts = [
     name: "SolarEdge HD-Wave Inverter",
     model: "SE7600H-US",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop",
-    price: "$1,299",
+    price: "R120,299",
     rating: 4.8,
     features: ["99% efficiency", "25-year warranty", "Smart monitoring"],
     description: "Industry-leading single-phase inverter with HD-Wave technology for maximum efficiency."
@@ -26,7 +26,7 @@ const solarProducts = [
     name: "Tesla Powerwall 2",
     model: "Battery Storage",
     image: "https://images.unsplash.com/photo-1595437193398-f24279553f4f?w=400&h=300&fit=crop",
-    price: "$7,500",
+    price: "R75,500",
     rating: 4.7,
     features: ["13.5 kWh capacity", "Weather resistant", "Mobile app control"],
     description: "Complete home battery system with integrated inverter for backup power and energy independence."
@@ -36,7 +36,7 @@ const solarProducts = [
     name: "Enphase IQ8+ Microinverters",
     model: "IQ8PLUS-72-2-US",
     image: "https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=400&h=300&fit=crop",
-    price: "$189",
+    price: "R18,999",
     rating: 4.9,
     features: ["Module-level optimization", "25-year warranty", "Grid-forming technology"],
     description: "Advanced microinverter technology that maximizes energy harvest from every solar panel."
@@ -46,7 +46,7 @@ const solarProducts = [
     name: "Tesla Wall Connector",
     model: "EV Charger",
     image: "https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?w=400&h=300&fit=crop",
-    price: "$475",
+    price: "R44,750",
     rating: 4.6,
     features: ["48A charging", "Wi-Fi enabled", "Weather resistant"],
     description: "High-speed home EV charging solution that integrates seamlessly with solar systems."
@@ -56,7 +56,7 @@ const solarProducts = [
     name: "SunPower Maxeon 3 Solar Panels",
     model: "SPR-400-COM",
     image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=300&fit=crop",
-    price: "$450",
+    price: "R45,000",
     rating: 4.8,
     features: ["400W output", "Copper foundation", "40-year warranty"],
     description: "Premium solar panels with industry-leading efficiency and unmatched durability."
@@ -66,7 +66,7 @@ const solarProducts = [
     name: "Solaredge EV Charging Inverter",
     model: "SE7600H-RWS",
     image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=400&h=300&fit=crop",
-    price: "$2,199",
+    price: "R22,199",
     rating: 4.7,
     features: ["Integrated EV charging", "Smart load management", "Solar boost mode"],
     description: "Revolutionary inverter that combines solar energy conversion with EV charging capabilities."
