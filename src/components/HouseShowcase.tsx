@@ -6,29 +6,29 @@ import { ArrowRight, Home, Zap, Battery } from "lucide-react";
 const houseExamples = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop",
     title: "Modern Family Home",
-    location: "California, USA",
+    location: "Sandton, Johannesburg",
     panels: "24 Panels",
-    savings: "$2,400/year",
+    savings: "R38,400/year",
     capacity: "8.4 kW System"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
     title: "Suburban Villa",
-    location: "Texas, USA", 
+    location: "Constantia, Cape Town", 
     panels: "36 Panels",
-    savings: "$3,200/year",
+    savings: "R51,200/year",
     capacity: "12.6 kW System"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1600607687644-c7171b42498e?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&h=400&fit=crop",
     title: "Contemporary Estate",
-    location: "Arizona, USA",
+    location: "Waterkloof, Pretoria",
     panels: "48 Panels",
-    savings: "$4,100/year", 
+    savings: "R65,600/year", 
     capacity: "16.8 kW System"
   }
 ];
@@ -43,7 +43,7 @@ export const HouseShowcase = () => {
             <span className="text-gradient">Savings</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See how homeowners across the country are transforming their energy consumption 
+            See how homeowners across South Africa are transforming their energy consumption 
             and achieving energy independence with our solar solutions.
           </p>
         </div>

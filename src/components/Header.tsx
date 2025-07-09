@@ -22,31 +22,12 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigationItems = [
-    {
-      title: "For Homeowners",
-      href: "#homeowners",
-      description: "Smart energy solutions for your home"
-    },
-    {
-      title: "For Businesses", 
-      href: "#businesses",
-      description: "Commercial energy management systems"
-    },
-    {
-      title: "Installers & Professionals",
-      href: "#installers", 
-      description: "Tools and training for installation professionals"
-    },
-    {
-      title: "Resources & Support",
-      href: "#resources",
-      description: "Documentation, guides and customer support"
-    },
-    {
-      title: "About Us",
-      href: "#about",
-      description: "Learn about our mission and technology"
-    }
+    { title: "Home", href: "#" },
+    { title: "Projects", href: "#projects" },
+    { title: "Funding", href: "#funding" },
+    { title: "FAQs", href: "#faqs" },
+    { title: "Blog", href: "#blog" },
+    { title: "Contact Us", href: "#contact" }
   ];
 
   return (
@@ -65,16 +46,7 @@ export const Header = () => {
         <div className="hidden md:flex items-center space-x-6">
           <NavigationMenu>
             <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  href="#"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                >
-                  Home
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              {navigationItems.slice(0, 4).map((item) => (
+              {navigationItems.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   <NavigationMenuLink
                     href={item.href}
@@ -84,15 +56,6 @@ export const Header = () => {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
-
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  href="#about"
-                  className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
-                >
-                  About Us
-                </NavigationMenuLink>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
@@ -101,15 +64,14 @@ export const Header = () => {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="text-sm">
                 <Globe className="w-4 h-4 mr-2" />
-                US
+                ZA
                 <ChevronDown className="w-4 h-4 ml-1" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem>🇺🇸 United States</DropdownMenuItem>
-              <DropdownMenuItem>🇨🇦 Canada</DropdownMenuItem>
-              <DropdownMenuItem>🇬🇧 United Kingdom</DropdownMenuItem>
-              <DropdownMenuItem>🇦🇺 Australia</DropdownMenuItem>
+            <DropdownMenuContent align="end" className="bg-white border border-gray-200 shadow-lg z-50">
+              <DropdownMenuItem>🇿🇦 South Africa</DropdownMenuItem>
+              <DropdownMenuItem>🇳🇦 Namibia</DropdownMenuItem>
+              <DropdownMenuItem>🇧🇼 Botswana</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
@@ -117,6 +79,11 @@ export const Header = () => {
           <Button variant="outline" size="sm" className="text-sm">
             <Phone className="w-4 h-4 mr-2" />
             Contact
+          </Button>
+
+          {/* Login to Metering */}
+          <Button className="bg-brand-orange hover:bg-orange-600 text-white">
+            Log in to metering
           </Button>
         </div>
 
@@ -127,11 +94,8 @@ export const Header = () => {
               <Menu className="w-5 h-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+          <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white">
             <div className="flex flex-col space-y-4 mt-8">
-              <a href="#" className="text-lg font-medium hover:text-orange-500 transition-colors">
-                Home
-              </a>
               {navigationItems.map((item) => (
                 <a
                   key={item.title}
@@ -145,11 +109,14 @@ export const Header = () => {
               <div className="pt-4 space-y-2">
                 <Button variant="outline" className="w-full justify-start">
                   <Globe className="w-4 h-4 mr-2" />
-                  Language: US
+                  Language: ZA
                 </Button>
                 <Button variant="default" className="w-full justify-start bg-brand-orange hover:bg-orange-600">
                   <Phone className="w-4 h-4 mr-2" />
                   Contact Support
+                </Button>
+                <Button className="w-full bg-brand-orange hover:bg-orange-600 text-white">
+                  Log in to metering
                 </Button>
               </div>
             </div>

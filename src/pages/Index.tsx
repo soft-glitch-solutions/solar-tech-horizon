@@ -5,6 +5,8 @@ import { ProductEcosystem } from "@/components/ProductEcosystem";
 import { SolarProductsCarousel } from "@/components/SolarProductsCarousel";
 import { UserSegments } from "@/components/UserSegments";
 import { HouseShowcase } from "@/components/HouseShowcase";
+import { ClientApproach } from "@/components/ClientApproach";
+import { TrustedClients } from "@/components/TrustedClients";
 import { SmartPlatform } from "@/components/SmartPlatform";
 import { Resources } from "@/components/Resources";
 import { NewsUpdates } from "@/components/NewsUpdates";
@@ -20,6 +22,8 @@ const Index = () => {
         <SolarProductsCarousel />
         <UserSegments />
         <HouseShowcase />
+        <ClientApproach />
+        <TrustedClients />
         <SmartPlatform />
         <Resources />
         <NewsUpdates />

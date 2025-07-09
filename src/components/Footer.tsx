@@ -7,43 +7,31 @@ import {
   Phone, 
   MapPin,
   Facebook,
-  Twitter,
   Linkedin,
-  Youtube,
   Globe,
   ArrowRight
 } from "lucide-react";
 
 export const Footer = () => {
   const productLinks = [
-    { name: "Smart Inverters", href: "#inverters" },
-    { name: "Solar Batteries", href: "#batteries" },
-    { name: "EV Chargers", href: "#ev-chargers" },
-    { name: "Energy Monitoring", href: "#monitoring" },
-    { name: "Smart Controllers", href: "#controllers" }
+    { name: "Home", href: "#" },
+    { name: "Our Expertise", href: "#expertise" },
+    { name: "Funding", href: "#funding" },
+    { name: "About Us", href: "#about" },
+    { name: "Contact Us", href: "#contact" }
   ];
 
   const supportLinks = [
-    { name: "Knowledge Base", href: "#knowledge" },
-    { name: "Installation Guides", href: "#guides" },
-    { name: "Customer Support", href: "#support" },
-    { name: "Warranty & Service", href: "#warranty" },
-    { name: "Training Academy", href: "#training" }
+    { name: "Terms of use", href: "#terms" },
+    { name: "Privacy", href: "#privacy" },
+    { name: "Cookie policy", href: "#cookies" },
+    { name: "Terms of sale", href: "#terms-sale" }
   ];
 
   const companyLinks = [
     { name: "About Us", href: "#about" },
-    { name: "Careers", href: "#careers" },
-    { name: "Press & Media", href: "#press" },
-    { name: "Investor Relations", href: "#investors" },
-    { name: "Sustainability", href: "#sustainability" }
-  ];
-
-  const legalLinks = [
-    { name: "Privacy Policy", href: "#privacy" },
-    { name: "Terms of Service", href: "#terms" },
-    { name: "Cookie Policy", href: "#cookies" },
-    { name: "Data Protection", href: "#data-protection" }
+    { name: "News", href: "#news" },
+    { name: "FAQ's", href: "#faqs" }
   ];
 
   return (
@@ -55,7 +43,7 @@ export const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Stay Connected with Smart Energy Innovation</h3>
               <p className="text-gray-300 leading-relaxed">
-                Get the latest updates on clean energy technology, product launches, 
+                Get the latest updates on clean energy technology, project launches, 
                 and exclusive insights delivered to your inbox.
               </p>
             </div>
@@ -81,60 +69,60 @@ export const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="container py-16">
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-orange-500 to-green-500 rounded-lg">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-bold text-2xl">SolarTech</span>
+              <img 
+                src="/lovable-uploads/4527a828-b094-4932-9ddc-7b666ca95e10.png" 
+                alt="Enfolded Logo" 
+                className="h-8 w-auto brightness-0 invert"
+              />
             </div>
             
             <p className="text-gray-300 leading-relaxed max-w-md">
               Leading the revolution in smart energy solutions with cutting-edge solar technology, 
-              intelligent energy management, and sustainable innovation for homes and businesses worldwide.
+              intelligent energy management, and sustainable innovation for homes and businesses across South Africa.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
+              <div className="flex items-start gap-3 text-gray-300">
+                <MapPin className="w-4 h-4 text-brand-orange mt-1 flex-shrink-0" />
+                <span className="text-sm">Unit S1 Spearhead Business Park, C/O Montague Drive & Freedom Way, Montague Gardens, Cape Town, 7441</span>
+              </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Phone className="w-4 h-4 text-brand-orange" />
-                <span>1-800-SOLAR-TECH (1-800-765-2783)</span>
+                <span>+27 21 555 0123</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Mail className="w-4 h-4 text-brand-orange" />
-                <span>support@solartech.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <MapPin className="w-4 h-4 text-brand-orange" />
-                <span>1234 Innovation Drive, Clean Energy City, CA 90210</span>
+                <span>info@enfolded.co.za</span>
               </div>
             </div>
 
             {/* Social Media */}
             <div className="flex gap-4">
-              {[
-                { icon: Facebook, label: "Facebook" },
-                { icon: Twitter, label: "Twitter" },
-                { icon: Linkedin, label: "LinkedIn" },
-                { icon: Youtube, label: "YouTube" }
-              ].map(({ icon: Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-orange transition-colors"
-                  aria-label={label}
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-orange transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-orange transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
-          {/* Products */}
+          {/* Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg">Products</h4>
+            <h4 className="font-semibold text-lg">Links</h4>
             <nav className="space-y-3">
               {productLinks.map((link) => (
                 <a
@@ -163,22 +151,6 @@ export const Footer = () => {
               ))}
             </nav>
           </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-lg">Company</h4>
-            <nav className="space-y-3">
-              {companyLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="block text-gray-300 hover:text-brand-orange transition-colors"
-                >
-                  {link.name}
-                </a>
-              ))}
-            </nav>
-          </div>
         </div>
       </div>
 
@@ -188,26 +160,13 @@ export const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-400 text-sm">
-              © 2024 SolarTech. All rights reserved. Powering the future with clean energy.
-            </div>
-
-            {/* Legal Links */}
-            <div className="flex flex-wrap gap-6 text-sm">
-              {legalLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-gray-400 hover:text-brand-orange transition-colors"
-                >
-                  {link.name}
-                </a>
-              ))}
+              Copyright 2025, INFOLED (Pty) Ltd. Built by Eric
             </div>
 
             {/* Language/Region */}
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <Globe className="w-4 h-4" />
-              <span>United States (English)</span>
+              <span>South Africa (English)</span>
             </div>
           </div>
         </div>
