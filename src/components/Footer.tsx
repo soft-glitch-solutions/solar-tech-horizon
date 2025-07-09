@@ -160,7 +160,7 @@ export const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-400 text-sm">
-              Copyright 2025, INFOLED (Pty) Ltd. Built by Eric
+              Copyright 2025, INFOLED (Pty) Ltd. Built by Shaqeel less @ Soft glitch Solutions
             </div>
 
             {/* Language/Region */}
